@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>beta_基于django的多平台自动私信任务管理系统</title>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/echarts.js"></script>
+    <style>
+      body {
+        color: black;
+      }
+      .bkimg {
+        background-image: url('/static/imgs/default.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: opacity(90%);
+        filter: brightness(10%);
+        overflow: hidden;
+      }
+      .myechart_size {
+        height: 450px;
+      }
+      .myechart_size-height-full {
+        with: 95%;
+        height: 480px;
+      }
+    </style>
+    
+    {% include 'config_visual/function_echart.html' %}
+  </head>
+  <body>
+    <div class="bg-image" style="{% include 'config_visual/background.html' %}">
+      <div class="row">
+        <div class="d-flex justify-content-center">
+          <h3 style="color:black; font-size: 30px; font-weight: bold;">beta_基于django的多平台自动私信任务管理系统 任务状态表(tkwkwaskstatus)</h3>
+        </div>
+      </div>
+      {% csrf_token %}
+
+
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_statuscode_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 状态码 ******************** pie_v2***/ init_echart("echart_tkwkwaskstatus_statuscode_pie_v2",'tkwkwaskstatus.statuscode_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_statuscode_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 状态码 ******************** pie_v1***/ init_echart("echart_tkwkwaskstatus_statuscode_pie_v1",'tkwkwaskstatus.statuscode_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_statuscode_pie" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 状态码 ******************** pie***/ init_echart("echart_tkwkwaskstatus_statuscode_pie",'tkwkwaskstatus.statuscode_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_statuscode_line" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 状态码 ******************** line***/ init_echart("echart_tkwkwaskstatus_statuscode_line",'tkwkwaskstatus.statuscode_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_statuscode_bar" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 状态码 ******************** bar***/ init_echart("echart_tkwkwaskstatus_statuscode_bar",'tkwkwaskstatus.statuscode_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_statuscode_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 状态码 ******************** bar_v1***/ init_echart("echart_tkwkwaskstatus_statuscode_bar_v1",'tkwkwaskstatus.statuscode_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_statusname_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 状态名称 ******************** pie_v2***/ init_echart("echart_tkwkwaskstatus_statusname_pie_v2",'tkwkwaskstatus.statusname_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_statusname_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 状态名称 ******************** pie_v1***/ init_echart("echart_tkwkwaskstatus_statusname_pie_v1",'tkwkwaskstatus.statusname_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_statusname_pie" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 状态名称 ******************** pie***/ init_echart("echart_tkwkwaskstatus_statusname_pie",'tkwkwaskstatus.statusname_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_statusname_line" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 状态名称 ******************** line***/ init_echart("echart_tkwkwaskstatus_statusname_line",'tkwkwaskstatus.statusname_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_statusname_bar" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 状态名称 ******************** bar***/ init_echart("echart_tkwkwaskstatus_statusname_bar",'tkwkwaskstatus.statusname_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_statusname_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 状态名称 ******************** bar_v1***/ init_echart("echart_tkwkwaskstatus_statusname_bar_v1",'tkwkwaskstatus.statusname_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_createdat_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 创建时间 ******************** pie_v2***/ init_echart("echart_tkwkwaskstatus_createdat_pie_v2",'tkwkwaskstatus.createdat_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_createdat_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 创建时间 ******************** pie_v1***/ init_echart("echart_tkwkwaskstatus_createdat_pie_v1",'tkwkwaskstatus.createdat_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_createdat_pie" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 创建时间 ******************** pie***/ init_echart("echart_tkwkwaskstatus_createdat_pie",'tkwkwaskstatus.createdat_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_createdat_line" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 创建时间 ******************** line***/ init_echart("echart_tkwkwaskstatus_createdat_line",'tkwkwaskstatus.createdat_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_createdat_bar" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 创建时间 ******************** bar***/ init_echart("echart_tkwkwaskstatus_createdat_bar",'tkwkwaskstatus.createdat_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_createdat_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 创建时间 ******************** bar_v1***/ init_echart("echart_tkwkwaskstatus_createdat_bar_v1",'tkwkwaskstatus.createdat_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_updatedat_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 更新时间 ******************** pie_v2***/ init_echart("echart_tkwkwaskstatus_updatedat_pie_v2",'tkwkwaskstatus.updatedat_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_updatedat_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 更新时间 ******************** pie_v1***/ init_echart("echart_tkwkwaskstatus_updatedat_pie_v1",'tkwkwaskstatus.updatedat_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_updatedat_pie" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 更新时间 ******************** pie***/ init_echart("echart_tkwkwaskstatus_updatedat_pie",'tkwkwaskstatus.updatedat_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_updatedat_line" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 更新时间 ******************** line***/ init_echart("echart_tkwkwaskstatus_updatedat_line",'tkwkwaskstatus.updatedat_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_updatedat_bar" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 更新时间 ******************** bar***/ init_echart("echart_tkwkwaskstatus_updatedat_bar",'tkwkwaskstatus.updatedat_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_updatedat_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 更新时间 ******************** bar_v1***/ init_echart("echart_tkwkwaskstatus_updatedat_bar_v1",'tkwkwaskstatus.updatedat_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_completedat_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 完成时间 ******************** pie_v2***/ init_echart("echart_tkwkwaskstatus_completedat_pie_v2",'tkwkwaskstatus.completedat_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_completedat_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 完成时间 ******************** pie_v1***/ init_echart("echart_tkwkwaskstatus_completedat_pie_v1",'tkwkwaskstatus.completedat_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_completedat_pie" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 完成时间 ******************** pie***/ init_echart("echart_tkwkwaskstatus_completedat_pie",'tkwkwaskstatus.completedat_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_completedat_line" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 完成时间 ******************** line***/ init_echart("echart_tkwkwaskstatus_completedat_line",'tkwkwaskstatus.completedat_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_completedat_bar" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 完成时间 ******************** bar***/ init_echart("echart_tkwkwaskstatus_completedat_bar",'tkwkwaskstatus.completedat_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_completedat_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 完成时间 ******************** bar_v1***/ init_echart("echart_tkwkwaskstatus_completedat_bar_v1",'tkwkwaskstatus.completedat_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_messagecontent_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 私信内容 ******************** pie_v2***/ init_echart("echart_tkwkwaskstatus_messagecontent_pie_v2",'tkwkwaskstatus.messagecontent_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_messagecontent_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 私信内容 ******************** pie_v1***/ init_echart("echart_tkwkwaskstatus_messagecontent_pie_v1",'tkwkwaskstatus.messagecontent_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_messagecontent_pie" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 私信内容 ******************** pie***/ init_echart("echart_tkwkwaskstatus_messagecontent_pie",'tkwkwaskstatus.messagecontent_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_messagecontent_line" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 私信内容 ******************** line***/ init_echart("echart_tkwkwaskstatus_messagecontent_line",'tkwkwaskstatus.messagecontent_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_messagecontent_bar" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 私信内容 ******************** bar***/ init_echart("echart_tkwkwaskstatus_messagecontent_bar",'tkwkwaskstatus.messagecontent_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_tkwkwaskstatus_messagecontent_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 任务状态表 私信内容 ******************** bar_v1***/ init_echart("echart_tkwkwaskstatus_messagecontent_bar_v1",'tkwkwaskstatus.messagecontent_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+
+
+
+    </div>
+  </body>
+</html>

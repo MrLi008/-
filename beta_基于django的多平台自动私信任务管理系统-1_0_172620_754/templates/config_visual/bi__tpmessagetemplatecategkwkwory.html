@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>beta_基于django的多平台自动私信任务管理系统</title>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/echarts.js"></script>
+    <style>
+      body {
+        color: black;
+      }
+      .bkimg {
+        background-image: url('/static/imgs/default.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: opacity(90%);
+        filter: brightness(10%);
+        overflow: hidden;
+      }
+      .myechart_size {
+        height: 450px;
+      }
+      .myechart_size-height-full {
+        with: 95%;
+        height: 480px;
+      }
+    </style>
+    
+    {% include 'config_visual/function_echart.html' %}
+  </head>
+  <body>
+    <div class="bg-image" style="{% include 'config_visual/background.html' %}">
+      <div class="row">
+        <div class="d-flex justify-content-center">
+          <h3 style="color:black; font-size: 30px; font-weight: bold;">beta_基于django的多平台自动私信任务管理系统 消息模板分类表(messagetemplatecategkwkwory)</h3>
+        </div>
+      </div>
+      {% csrf_token %}
+
+
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_name_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 分类名称 ******************** pie_v2***/ init_echart("echart_messagetemplatecategkwkwory_name_pie_v2",'messagetemplatecategkwkwory.name_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_name_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 分类名称 ******************** pie_v1***/ init_echart("echart_messagetemplatecategkwkwory_name_pie_v1",'messagetemplatecategkwkwory.name_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_name_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 分类名称 ******************** pie***/ init_echart("echart_messagetemplatecategkwkwory_name_pie",'messagetemplatecategkwkwory.name_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_name_line" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 分类名称 ******************** line***/ init_echart("echart_messagetemplatecategkwkwory_name_line",'messagetemplatecategkwkwory.name_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_name_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 分类名称 ******************** bar***/ init_echart("echart_messagetemplatecategkwkwory_name_bar",'messagetemplatecategkwkwory.name_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_name_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 分类名称 ******************** bar_v1***/ init_echart("echart_messagetemplatecategkwkwory_name_bar_v1",'messagetemplatecategkwkwory.name_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_description_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 分类描述 ******************** pie_v2***/ init_echart("echart_messagetemplatecategkwkwory_description_pie_v2",'messagetemplatecategkwkwory.description_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_description_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 分类描述 ******************** pie_v1***/ init_echart("echart_messagetemplatecategkwkwory_description_pie_v1",'messagetemplatecategkwkwory.description_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_description_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 分类描述 ******************** pie***/ init_echart("echart_messagetemplatecategkwkwory_description_pie",'messagetemplatecategkwkwory.description_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_description_line" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 分类描述 ******************** line***/ init_echart("echart_messagetemplatecategkwkwory_description_line",'messagetemplatecategkwkwory.description_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_description_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 分类描述 ******************** bar***/ init_echart("echart_messagetemplatecategkwkwory_description_bar",'messagetemplatecategkwkwory.description_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_description_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 分类描述 ******************** bar_v1***/ init_echart("echart_messagetemplatecategkwkwory_description_bar_v1",'messagetemplatecategkwkwory.description_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_createdat_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 创建时间 ******************** pie_v2***/ init_echart("echart_messagetemplatecategkwkwory_createdat_pie_v2",'messagetemplatecategkwkwory.createdat_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_createdat_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 创建时间 ******************** pie_v1***/ init_echart("echart_messagetemplatecategkwkwory_createdat_pie_v1",'messagetemplatecategkwkwory.createdat_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_createdat_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 创建时间 ******************** pie***/ init_echart("echart_messagetemplatecategkwkwory_createdat_pie",'messagetemplatecategkwkwory.createdat_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_createdat_line" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 创建时间 ******************** line***/ init_echart("echart_messagetemplatecategkwkwory_createdat_line",'messagetemplatecategkwkwory.createdat_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_createdat_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 创建时间 ******************** bar***/ init_echart("echart_messagetemplatecategkwkwory_createdat_bar",'messagetemplatecategkwkwory.createdat_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_createdat_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 创建时间 ******************** bar_v1***/ init_echart("echart_messagetemplatecategkwkwory_createdat_bar_v1",'messagetemplatecategkwkwory.createdat_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_updatedat_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 更新时间 ******************** pie_v2***/ init_echart("echart_messagetemplatecategkwkwory_updatedat_pie_v2",'messagetemplatecategkwkwory.updatedat_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_updatedat_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 更新时间 ******************** pie_v1***/ init_echart("echart_messagetemplatecategkwkwory_updatedat_pie_v1",'messagetemplatecategkwkwory.updatedat_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_updatedat_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 更新时间 ******************** pie***/ init_echart("echart_messagetemplatecategkwkwory_updatedat_pie",'messagetemplatecategkwkwory.updatedat_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_updatedat_line" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 更新时间 ******************** line***/ init_echart("echart_messagetemplatecategkwkwory_updatedat_line",'messagetemplatecategkwkwory.updatedat_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_updatedat_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 更新时间 ******************** bar***/ init_echart("echart_messagetemplatecategkwkwory_updatedat_bar",'messagetemplatecategkwkwory.updatedat_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_updatedat_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 更新时间 ******************** bar_v1***/ init_echart("echart_messagetemplatecategkwkwory_updatedat_bar_v1",'messagetemplatecategkwkwory.updatedat_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_skwkwortkwkworder_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 排序顺序用于控制分类在列中的显示顺序 ******************** pie_v2***/ init_echart("echart_messagetemplatecategkwkwory_skwkwortkwkworder_pie_v2",'messagetemplatecategkwkwory.skwkwortkwkworder_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_skwkwortkwkworder_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 排序顺序用于控制分类在列中的显示顺序 ******************** pie_v1***/ init_echart("echart_messagetemplatecategkwkwory_skwkwortkwkworder_pie_v1",'messagetemplatecategkwkwory.skwkwortkwkworder_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_skwkwortkwkworder_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 排序顺序用于控制分类在列中的显示顺序 ******************** pie***/ init_echart("echart_messagetemplatecategkwkwory_skwkwortkwkworder_pie",'messagetemplatecategkwkwory.skwkwortkwkworder_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_skwkwortkwkworder_line" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 排序顺序用于控制分类在列中的显示顺序 ******************** line***/ init_echart("echart_messagetemplatecategkwkwory_skwkwortkwkworder_line",'messagetemplatecategkwkwory.skwkwortkwkworder_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_skwkwortkwkworder_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 排序顺序用于控制分类在列中的显示顺序 ******************** bar***/ init_echart("echart_messagetemplatecategkwkwory_skwkwortkwkworder_bar",'messagetemplatecategkwkwory.skwkwortkwkworder_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_skwkwortkwkworder_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 排序顺序用于控制分类在列中的显示顺序 ******************** bar_v1***/ init_echart("echart_messagetemplatecategkwkwory_skwkwortkwkworder_bar_v1",'messagetemplatecategkwkwory.skwkwortkwkworder_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_templatecount_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 模板数量可选统计属于该分类的消息模板数量可通过触发器或应用逻辑维护 ******************** pie_v2***/ init_echart("echart_messagetemplatecategkwkwory_templatecount_pie_v2",'messagetemplatecategkwkwory.templatecount_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_templatecount_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 模板数量可选统计属于该分类的消息模板数量可通过触发器或应用逻辑维护 ******************** pie_v1***/ init_echart("echart_messagetemplatecategkwkwory_templatecount_pie_v1",'messagetemplatecategkwkwory.templatecount_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_templatecount_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 模板数量可选统计属于该分类的消息模板数量可通过触发器或应用逻辑维护 ******************** pie***/ init_echart("echart_messagetemplatecategkwkwory_templatecount_pie",'messagetemplatecategkwkwory.templatecount_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_templatecount_line" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 模板数量可选统计属于该分类的消息模板数量可通过触发器或应用逻辑维护 ******************** line***/ init_echart("echart_messagetemplatecategkwkwory_templatecount_line",'messagetemplatecategkwkwory.templatecount_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_templatecount_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 模板数量可选统计属于该分类的消息模板数量可通过触发器或应用逻辑维护 ******************** bar***/ init_echart("echart_messagetemplatecategkwkwory_templatecount_bar",'messagetemplatecategkwkwory.templatecount_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplatecategkwkwory_templatecount_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板分类表 模板数量可选统计属于该分类的消息模板数量可通过触发器或应用逻辑维护 ******************** bar_v1***/ init_echart("echart_messagetemplatecategkwkwory_templatecount_bar_v1",'messagetemplatecategkwkwory.templatecount_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+    </div>
+  </body>
+</html>

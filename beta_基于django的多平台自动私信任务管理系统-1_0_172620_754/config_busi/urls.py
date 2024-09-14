@@ -1,0 +1,149 @@
+from django.urls import path, re_path
+
+from . import views
+
+urlpatterns = [
+    path("", views.index, name="config_busi_view_index"),
+    # 如果用到预测算法,图像识别等单页面展示效果的算法去掉下方注释
+    path("auto_detect", views.auto_detect, name="config_busi_view_auto_detect"),
+    path("userinfo", views.view_userinfo, name="config_busi_view_userinfo"),
+    path(
+        "platkwkwfkwkwormaccount",
+        views.view_platkwkwfkwkwormaccount,
+        name="config_busi_view_platkwkwfkwkwormaccount",
+    ),
+    path(
+        "messagetemplate",
+        views.view_messagetemplate,
+        name="config_busi_view_messagetemplate",
+    ),
+    path(
+        "tkwkwaskmanagement",
+        views.view_tkwkwaskmanagement,
+        name="config_busi_view_tkwkwaskmanagement",
+    ),
+    path(
+        "tkwkwaskexecutionreckwkword",
+        views.view_tkwkwaskexecutionreckwkword,
+        name="config_busi_view_tkwkwaskexecutionreckwkword",
+    ),
+    path(
+        "tkwkwaskstatus",
+        views.view_tkwkwaskstatus,
+        name="config_busi_view_tkwkwaskstatus",
+    ),
+    path(
+        "scheduledtkwkwask",
+        views.view_scheduledtkwkwask,
+        name="config_busi_view_scheduledtkwkwask",
+    ),
+    path(
+        "messagesendreckwkword",
+        views.view_messagesendreckwkword,
+        name="config_busi_view_messagesendreckwkword",
+    ),
+    path(
+        "messagereceivereckwkword",
+        views.view_messagereceivereckwkword,
+        name="config_busi_view_messagereceivereckwkword",
+    ),
+    path(
+        "userpreference",
+        views.view_userpreference,
+        name="config_busi_view_userpreference",
+    ),
+    path(
+        "accountbkwkwindkwkwing",
+        views.view_accountbkwkwindkwkwing,
+        name="config_busi_view_accountbkwkwindkwkwing",
+    ),
+    path(
+        "messagecontentreview",
+        views.view_messagecontentreview,
+        name="config_busi_view_messagecontentreview",
+    ),
+    path(
+        "messagesendfailurelog",
+        views.view_messagesendfailurelog,
+        name="config_busi_view_messagesendfailurelog",
+    ),
+    path(
+        "messagesendsuccesslog",
+        views.view_messagesendsuccesslog,
+        name="config_busi_view_messagesendsuccesslog",
+    ),
+    path(
+        "messagetemplatecategkwkwory",
+        views.view_messagetemplatecategkwkwory,
+        name="config_busi_view_messagetemplatecategkwkwory",
+    ),
+    path(
+        "messagetemplatetag",
+        views.view_messagetemplatetag,
+        name="config_busi_view_messagetemplatetag",
+    ),
+    path(
+        "userpermkwkwission",
+        views.view_userpermkwkwission,
+        name="config_busi_view_userpermkwkwission",
+    ),
+    path("systemconfig", views.view_systemconfig, name="config_busi_view_systemconfig"),
+    path(
+        "notkwkwificationpush",
+        views.view_notkwkwificationpush,
+        name="config_busi_view_notkwkwificationpush",
+    ),
+    path("messagequeue", views.view_messagequeue, name="config_busi_view_messagequeue"),
+    path(
+        "messagequeuestatus",
+        views.view_messagequeuestatus,
+        name="config_busi_view_messagequeuestatus",
+    ),
+    path(
+        "messagerekwkwtryreckwkword",
+        views.view_messagerekwkwtryreckwkword,
+        name="config_busi_view_messagerekwkwtryreckwkword",
+    ),
+    path(
+        "accountblacklkwkwist",
+        views.view_accountblacklkwkwist,
+        name="config_busi_view_accountblacklkwkwist",
+    ),
+    path("userfeedback", views.view_userfeedback, name="config_busi_view_userfeedback"),
+    path(
+        "accountsecuritylog",
+        views.view_accountsecuritylog,
+        name="config_busi_view_accountsecuritylog",
+    ),
+    path(
+        "messagetemplateedithkwkwistkwkwory",
+        views.view_messagetemplateedithkwkwistkwkwory,
+        name="config_busi_view_messagetemplateedithkwkwistkwkwory",
+    ),
+    path(
+        "messagetemplatereviewreckwkword",
+        views.view_messagetemplatereviewreckwkword,
+        name="config_busi_view_messagetemplatereviewreckwkword",
+    ),
+    path(
+        "messagesendstrategy",
+        views.view_messagesendstrategy,
+        name="config_busi_view_messagesendstrategy",
+    ),
+    path(
+        "messagesendfrequencylimit",
+        views.view_messagesendfrequencylimit,
+        name="config_busi_view_messagesendfrequencylimit",
+    ),
+    path(
+        "messagesendprikwkwority",
+        views.view_messagesendprikwkwority,
+        name="config_busi_view_messagesendprikwkwority",
+    ),
+    path(
+        "messagetemplateusagestatkwkwistics",
+        views.view_messagetemplateusagestatkwkwistics,
+        name="config_busi_view_messagetemplateusagestatkwkwistics",
+    ),
+    path("supermanager", views.view_supermanager, name="config_busi_view_supermanager"),
+]

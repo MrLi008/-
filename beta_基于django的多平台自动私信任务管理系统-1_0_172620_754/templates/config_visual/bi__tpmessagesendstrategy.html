@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>beta_基于django的多平台自动私信任务管理系统</title>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/echarts.js"></script>
+    <style>
+      body {
+        color: black;
+      }
+      .bkimg {
+        background-image: url('/static/imgs/default.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: opacity(90%);
+        filter: brightness(10%);
+        overflow: hidden;
+      }
+      .myechart_size {
+        height: 450px;
+      }
+      .myechart_size-height-full {
+        with: 95%;
+        height: 480px;
+      }
+    </style>
+    
+    {% include 'config_visual/function_echart.html' %}
+  </head>
+  <body>
+    <div class="bg-image" style="{% include 'config_visual/background.html' %}">
+      <div class="row">
+        <div class="d-flex justify-content-center">
+          <h3 style="color:black; font-size: 30px; font-weight: bold;">beta_基于django的多平台自动私信任务管理系统 消息发送策略表(messagesendstrategy)</h3>
+        </div>
+      </div>
+      {% csrf_token %}
+
+
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_name_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 策略名称 ******************** pie_v2***/ init_echart("echart_messagesendstrategy_name_pie_v2",'messagesendstrategy.name_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_name_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 策略名称 ******************** pie_v1***/ init_echart("echart_messagesendstrategy_name_pie_v1",'messagesendstrategy.name_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_name_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 策略名称 ******************** pie***/ init_echart("echart_messagesendstrategy_name_pie",'messagesendstrategy.name_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendstrategy_name_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 策略名称 ******************** line***/ init_echart("echart_messagesendstrategy_name_line",'messagesendstrategy.name_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_name_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 策略名称 ******************** bar***/ init_echart("echart_messagesendstrategy_name_bar",'messagesendstrategy.name_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_name_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 策略名称 ******************** bar_v1***/ init_echart("echart_messagesendstrategy_name_bar_v1",'messagesendstrategy.name_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_description_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 策略描述 ******************** pie_v2***/ init_echart("echart_messagesendstrategy_description_pie_v2",'messagesendstrategy.description_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_description_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 策略描述 ******************** pie_v1***/ init_echart("echart_messagesendstrategy_description_pie_v1",'messagesendstrategy.description_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_description_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 策略描述 ******************** pie***/ init_echart("echart_messagesendstrategy_description_pie",'messagesendstrategy.description_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendstrategy_description_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 策略描述 ******************** line***/ init_echart("echart_messagesendstrategy_description_line",'messagesendstrategy.description_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_description_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 策略描述 ******************** bar***/ init_echart("echart_messagesendstrategy_description_bar",'messagesendstrategy.description_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_description_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 策略描述 ******************** bar_v1***/ init_echart("echart_messagesendstrategy_description_bar_v1",'messagesendstrategy.description_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_platkwkwfkwkworm_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 平台类型 ******************** pie_v2***/ init_echart("echart_messagesendstrategy_platkwkwfkwkworm_pie_v2",'messagesendstrategy.platkwkwfkwkworm_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_platkwkwfkwkworm_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 平台类型 ******************** pie_v1***/ init_echart("echart_messagesendstrategy_platkwkwfkwkworm_pie_v1",'messagesendstrategy.platkwkwfkwkworm_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_platkwkwfkwkworm_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 平台类型 ******************** pie***/ init_echart("echart_messagesendstrategy_platkwkwfkwkworm_pie",'messagesendstrategy.platkwkwfkwkworm_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendstrategy_platkwkwfkwkworm_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 平台类型 ******************** line***/ init_echart("echart_messagesendstrategy_platkwkwfkwkworm_line",'messagesendstrategy.platkwkwfkwkworm_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_platkwkwfkwkworm_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 平台类型 ******************** bar***/ init_echart("echart_messagesendstrategy_platkwkwfkwkworm_bar",'messagesendstrategy.platkwkwfkwkworm_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_platkwkwfkwkworm_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 平台类型 ******************** bar_v1***/ init_echart("echart_messagesendstrategy_platkwkwfkwkworm_bar_v1",'messagesendstrategy.platkwkwfkwkworm_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_targettype_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 目标类型 ******************** pie_v2***/ init_echart("echart_messagesendstrategy_targettype_pie_v2",'messagesendstrategy.targettype_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_targettype_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 目标类型 ******************** pie_v1***/ init_echart("echart_messagesendstrategy_targettype_pie_v1",'messagesendstrategy.targettype_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_targettype_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 目标类型 ******************** pie***/ init_echart("echart_messagesendstrategy_targettype_pie",'messagesendstrategy.targettype_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendstrategy_targettype_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 目标类型 ******************** line***/ init_echart("echart_messagesendstrategy_targettype_line",'messagesendstrategy.targettype_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_targettype_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 目标类型 ******************** bar***/ init_echart("echart_messagesendstrategy_targettype_bar",'messagesendstrategy.targettype_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_targettype_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 目标类型 ******************** bar_v1***/ init_echart("echart_messagesendstrategy_targettype_bar_v1",'messagesendstrategy.targettype_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_contenttemplate_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 内容模板 ******************** pie_v2***/ init_echart("echart_messagesendstrategy_contenttemplate_pie_v2",'messagesendstrategy.contenttemplate_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_contenttemplate_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 内容模板 ******************** pie_v1***/ init_echart("echart_messagesendstrategy_contenttemplate_pie_v1",'messagesendstrategy.contenttemplate_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_contenttemplate_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 内容模板 ******************** pie***/ init_echart("echart_messagesendstrategy_contenttemplate_pie",'messagesendstrategy.contenttemplate_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendstrategy_contenttemplate_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 内容模板 ******************** line***/ init_echart("echart_messagesendstrategy_contenttemplate_line",'messagesendstrategy.contenttemplate_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_contenttemplate_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 内容模板 ******************** bar***/ init_echart("echart_messagesendstrategy_contenttemplate_bar",'messagesendstrategy.contenttemplate_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_contenttemplate_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 内容模板 ******************** bar_v1***/ init_echart("echart_messagesendstrategy_contenttemplate_bar_v1",'messagesendstrategy.contenttemplate_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_scheduletype_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 计划类型如一次性、周期性 ******************** pie_v2***/ init_echart("echart_messagesendstrategy_scheduletype_pie_v2",'messagesendstrategy.scheduletype_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_scheduletype_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 计划类型如一次性、周期性 ******************** pie_v1***/ init_echart("echart_messagesendstrategy_scheduletype_pie_v1",'messagesendstrategy.scheduletype_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_scheduletype_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 计划类型如一次性、周期性 ******************** pie***/ init_echart("echart_messagesendstrategy_scheduletype_pie",'messagesendstrategy.scheduletype_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendstrategy_scheduletype_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 计划类型如一次性、周期性 ******************** line***/ init_echart("echart_messagesendstrategy_scheduletype_line",'messagesendstrategy.scheduletype_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_scheduletype_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 计划类型如一次性、周期性 ******************** bar***/ init_echart("echart_messagesendstrategy_scheduletype_bar",'messagesendstrategy.scheduletype_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_scheduletype_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 计划类型如一次性、周期性 ******************** bar_v1***/ init_echart("echart_messagesendstrategy_scheduletype_bar_v1",'messagesendstrategy.scheduletype_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_starttime_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 开始时间 ******************** pie_v2***/ init_echart("echart_messagesendstrategy_starttime_pie_v2",'messagesendstrategy.starttime_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_starttime_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 开始时间 ******************** pie_v1***/ init_echart("echart_messagesendstrategy_starttime_pie_v1",'messagesendstrategy.starttime_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_starttime_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 开始时间 ******************** pie***/ init_echart("echart_messagesendstrategy_starttime_pie",'messagesendstrategy.starttime_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendstrategy_starttime_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 开始时间 ******************** line***/ init_echart("echart_messagesendstrategy_starttime_line",'messagesendstrategy.starttime_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_starttime_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 开始时间 ******************** bar***/ init_echart("echart_messagesendstrategy_starttime_bar",'messagesendstrategy.starttime_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_starttime_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 开始时间 ******************** bar_v1***/ init_echart("echart_messagesendstrategy_starttime_bar_v1",'messagesendstrategy.starttime_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_endtime_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 结束时间 ******************** pie_v2***/ init_echart("echart_messagesendstrategy_endtime_pie_v2",'messagesendstrategy.endtime_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_endtime_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 结束时间 ******************** pie_v1***/ init_echart("echart_messagesendstrategy_endtime_pie_v1",'messagesendstrategy.endtime_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_endtime_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 结束时间 ******************** pie***/ init_echart("echart_messagesendstrategy_endtime_pie",'messagesendstrategy.endtime_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendstrategy_endtime_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 结束时间 ******************** line***/ init_echart("echart_messagesendstrategy_endtime_line",'messagesendstrategy.endtime_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_endtime_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 结束时间 ******************** bar***/ init_echart("echart_messagesendstrategy_endtime_bar",'messagesendstrategy.endtime_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_endtime_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 结束时间 ******************** bar_v1***/ init_echart("echart_messagesendstrategy_endtime_bar_v1",'messagesendstrategy.endtime_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_status_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 状态如启用、禁用 ******************** pie_v2***/ init_echart("echart_messagesendstrategy_status_pie_v2",'messagesendstrategy.status_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_status_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 状态如启用、禁用 ******************** pie_v1***/ init_echart("echart_messagesendstrategy_status_pie_v1",'messagesendstrategy.status_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_status_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 状态如启用、禁用 ******************** pie***/ init_echart("echart_messagesendstrategy_status_pie",'messagesendstrategy.status_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendstrategy_status_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 状态如启用、禁用 ******************** line***/ init_echart("echart_messagesendstrategy_status_line",'messagesendstrategy.status_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_status_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 状态如启用、禁用 ******************** bar***/ init_echart("echart_messagesendstrategy_status_bar",'messagesendstrategy.status_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_status_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 状态如启用、禁用 ******************** bar_v1***/ init_echart("echart_messagesendstrategy_status_bar_v1",'messagesendstrategy.status_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_createdat_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 创建时间 ******************** pie_v2***/ init_echart("echart_messagesendstrategy_createdat_pie_v2",'messagesendstrategy.createdat_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_createdat_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 创建时间 ******************** pie_v1***/ init_echart("echart_messagesendstrategy_createdat_pie_v1",'messagesendstrategy.createdat_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_createdat_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 创建时间 ******************** pie***/ init_echart("echart_messagesendstrategy_createdat_pie",'messagesendstrategy.createdat_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendstrategy_createdat_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 创建时间 ******************** line***/ init_echart("echart_messagesendstrategy_createdat_line",'messagesendstrategy.createdat_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_createdat_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 创建时间 ******************** bar***/ init_echart("echart_messagesendstrategy_createdat_bar",'messagesendstrategy.createdat_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_createdat_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 创建时间 ******************** bar_v1***/ init_echart("echart_messagesendstrategy_createdat_bar_v1",'messagesendstrategy.createdat_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_updatedat_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 更新时间 ******************** pie_v2***/ init_echart("echart_messagesendstrategy_updatedat_pie_v2",'messagesendstrategy.updatedat_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_updatedat_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 更新时间 ******************** pie_v1***/ init_echart("echart_messagesendstrategy_updatedat_pie_v1",'messagesendstrategy.updatedat_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendstrategy_updatedat_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 更新时间 ******************** pie***/ init_echart("echart_messagesendstrategy_updatedat_pie",'messagesendstrategy.updatedat_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendstrategy_updatedat_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 更新时间 ******************** line***/ init_echart("echart_messagesendstrategy_updatedat_line",'messagesendstrategy.updatedat_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_updatedat_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 更新时间 ******************** bar***/ init_echart("echart_messagesendstrategy_updatedat_bar",'messagesendstrategy.updatedat_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendstrategy_updatedat_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送策略表 更新时间 ******************** bar_v1***/ init_echart("echart_messagesendstrategy_updatedat_bar_v1",'messagesendstrategy.updatedat_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+    </div>
+  </body>
+</html>

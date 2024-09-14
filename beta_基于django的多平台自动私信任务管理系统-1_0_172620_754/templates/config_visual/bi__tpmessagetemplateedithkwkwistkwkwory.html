@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>beta_基于django的多平台自动私信任务管理系统</title>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/echarts.js"></script>
+    <style>
+      body {
+        color: black;
+      }
+      .bkimg {
+        background-image: url('/static/imgs/default.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: opacity(90%);
+        filter: brightness(10%);
+        overflow: hidden;
+      }
+      .myechart_size {
+        height: 450px;
+      }
+      .myechart_size-height-full {
+        with: 95%;
+        height: 480px;
+      }
+    </style>
+    
+    {% include 'config_visual/function_echart.html' %}
+  </head>
+  <body>
+    <div class="bg-image" style="{% include 'config_visual/background.html' %}">
+      <div class="row">
+        <div class="d-flex justify-content-center">
+          <h3 style="color:black; font-size: 30px; font-weight: bold;">beta_基于django的多平台自动私信任务管理系统 消息模板编辑历史表(messagetemplateedithkwkwistkwkwory)</h3>
+        </div>
+      </div>
+      {% csrf_token %}
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_edittime_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 编辑时间 ******************** pie_v2***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_edittime_pie_v2",'messagetemplateedithkwkwistkwkwory.edittime_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_edittime_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 编辑时间 ******************** pie_v1***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_edittime_pie_v1",'messagetemplateedithkwkwistkwkwory.edittime_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_edittime_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 编辑时间 ******************** pie***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_edittime_pie",'messagetemplateedithkwkwistkwkwory.edittime_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_edittime_line" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 编辑时间 ******************** line***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_edittime_line",'messagetemplateedithkwkwistkwkwory.edittime_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_edittime_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 编辑时间 ******************** bar***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_edittime_bar",'messagetemplateedithkwkwistkwkwory.edittime_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_edittime_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 编辑时间 ******************** bar_v1***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_edittime_bar_v1",'messagetemplateedithkwkwistkwkwory.edittime_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_editcontent_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 编辑内容本次编辑的具体内容或变更 ******************** pie_v2***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_editcontent_pie_v2",'messagetemplateedithkwkwistkwkwory.editcontent_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_editcontent_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 编辑内容本次编辑的具体内容或变更 ******************** pie_v1***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_editcontent_pie_v1",'messagetemplateedithkwkwistkwkwory.editcontent_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_editcontent_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 编辑内容本次编辑的具体内容或变更 ******************** pie***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_editcontent_pie",'messagetemplateedithkwkwistkwkwory.editcontent_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_editcontent_line" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 编辑内容本次编辑的具体内容或变更 ******************** line***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_editcontent_line",'messagetemplateedithkwkwistkwkwory.editcontent_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_editcontent_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 编辑内容本次编辑的具体内容或变更 ******************** bar***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_editcontent_bar",'messagetemplateedithkwkwistkwkwory.editcontent_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_editcontent_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 编辑内容本次编辑的具体内容或变更 ******************** bar_v1***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_editcontent_bar_v1",'messagetemplateedithkwkwistkwkwory.editcontent_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_version_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 版本号每次编辑递增 ******************** pie_v2***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_version_pie_v2",'messagetemplateedithkwkwistkwkwory.version_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_version_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 版本号每次编辑递增 ******************** pie_v1***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_version_pie_v1",'messagetemplateedithkwkwistkwkwory.version_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_version_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 版本号每次编辑递增 ******************** pie***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_version_pie",'messagetemplateedithkwkwistkwkwory.version_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_version_line" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 版本号每次编辑递增 ******************** line***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_version_line",'messagetemplateedithkwkwistkwkwory.version_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_version_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 版本号每次编辑递增 ******************** bar***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_version_bar",'messagetemplateedithkwkwistkwkwory.version_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_version_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 版本号每次编辑递增 ******************** bar_v1***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_version_bar_v1",'messagetemplateedithkwkwistkwkwory.version_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_status_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 状态如有效、已删除等 ******************** pie_v2***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_status_pie_v2",'messagetemplateedithkwkwistkwkwory.status_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_status_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 状态如有效、已删除等 ******************** pie_v1***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_status_pie_v1",'messagetemplateedithkwkwistkwkwory.status_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_status_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 状态如有效、已删除等 ******************** pie***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_status_pie",'messagetemplateedithkwkwistkwkwory.status_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_status_line" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 状态如有效、已删除等 ******************** line***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_status_line",'messagetemplateedithkwkwistkwkwory.status_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_status_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 状态如有效、已删除等 ******************** bar***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_status_bar",'messagetemplateedithkwkwistkwkwory.status_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_status_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 状态如有效、已删除等 ******************** bar_v1***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_status_bar_v1",'messagetemplateedithkwkwistkwkwory.status_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_remark_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 备注编辑时的额外说明或备注信息 ******************** pie_v2***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_remark_pie_v2",'messagetemplateedithkwkwistkwkwory.remark_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_remark_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 备注编辑时的额外说明或备注信息 ******************** pie_v1***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_remark_pie_v1",'messagetemplateedithkwkwistkwkwory.remark_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_remark_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 备注编辑时的额外说明或备注信息 ******************** pie***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_remark_pie",'messagetemplateedithkwkwistkwkwory.remark_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_remark_line" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 备注编辑时的额外说明或备注信息 ******************** line***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_remark_line",'messagetemplateedithkwkwistkwkwory.remark_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_remark_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 备注编辑时的额外说明或备注信息 ******************** bar***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_remark_bar",'messagetemplateedithkwkwistkwkwory.remark_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagetemplateedithkwkwistkwkwory_remark_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息模板编辑历史表 备注编辑时的额外说明或备注信息 ******************** bar_v1***/ init_echart("echart_messagetemplateedithkwkwistkwkwory_remark_bar_v1",'messagetemplateedithkwkwistkwkwory.remark_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+
+
+
+    </div>
+  </body>
+</html>

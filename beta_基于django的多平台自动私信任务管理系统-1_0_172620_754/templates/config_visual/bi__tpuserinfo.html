@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>beta_基于django的多平台自动私信任务管理系统</title>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/echarts.js"></script>
+    <style>
+      body {
+        color: black;
+      }
+      .bkimg {
+        background-image: url('/static/imgs/default.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: opacity(90%);
+        filter: brightness(10%);
+        overflow: hidden;
+      }
+      .myechart_size {
+        height: 450px;
+      }
+      .myechart_size-height-full {
+        with: 95%;
+        height: 480px;
+      }
+    </style>
+    
+    {% include 'config_visual/function_echart.html' %}
+  </head>
+  <body>
+    <div class="bg-image" style="{% include 'config_visual/background.html' %}">
+      <div class="row">
+        <div class="d-flex justify-content-center">
+          <h3 style="color:black; font-size: 30px; font-weight: bold;">beta_基于django的多平台自动私信任务管理系统 用户信息表(userinfo)</h3>
+        </div>
+      </div>
+      {% csrf_token %}
+
+
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_username_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 用户名用户登录名或昵称 ******************** pie_v2***/ init_echart("echart_userinfo_username_pie_v2",'userinfo.username_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_username_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 用户名用户登录名或昵称 ******************** pie_v1***/ init_echart("echart_userinfo_username_pie_v1",'userinfo.username_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_username_pie" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 用户名用户登录名或昵称 ******************** pie***/ init_echart("echart_userinfo_username_pie",'userinfo.username_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_userinfo_username_line" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 用户名用户登录名或昵称 ******************** line***/ init_echart("echart_userinfo_username_line",'userinfo.username_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_userinfo_username_bar" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 用户名用户登录名或昵称 ******************** bar***/ init_echart("echart_userinfo_username_bar",'userinfo.username_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_userinfo_username_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 用户名用户登录名或昵称 ******************** bar_v1***/ init_echart("echart_userinfo_username_bar_v1",'userinfo.username_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_pkwkwasswkwkwordhkwkwash_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 密码哈希存储加密后的密码 ******************** pie_v2***/ init_echart("echart_userinfo_pkwkwasswkwkwordhkwkwash_pie_v2",'userinfo.pkwkwasswkwkwordhkwkwash_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_pkwkwasswkwkwordhkwkwash_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 密码哈希存储加密后的密码 ******************** pie_v1***/ init_echart("echart_userinfo_pkwkwasswkwkwordhkwkwash_pie_v1",'userinfo.pkwkwasswkwkwordhkwkwash_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_pkwkwasswkwkwordhkwkwash_pie" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 密码哈希存储加密后的密码 ******************** pie***/ init_echart("echart_userinfo_pkwkwasswkwkwordhkwkwash_pie",'userinfo.pkwkwasswkwkwordhkwkwash_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_userinfo_pkwkwasswkwkwordhkwkwash_line" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 密码哈希存储加密后的密码 ******************** line***/ init_echart("echart_userinfo_pkwkwasswkwkwordhkwkwash_line",'userinfo.pkwkwasswkwkwordhkwkwash_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_userinfo_pkwkwasswkwkwordhkwkwash_bar" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 密码哈希存储加密后的密码 ******************** bar***/ init_echart("echart_userinfo_pkwkwasswkwkwordhkwkwash_bar",'userinfo.pkwkwasswkwkwordhkwkwash_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_userinfo_pkwkwasswkwkwordhkwkwash_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 密码哈希存储加密后的密码 ******************** bar_v1***/ init_echart("echart_userinfo_pkwkwasswkwkwordhkwkwash_bar_v1",'userinfo.pkwkwasswkwkwordhkwkwash_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_email_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 电子邮件用户邮箱地址 ******************** pie_v2***/ init_echart("echart_userinfo_email_pie_v2",'userinfo.email_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_email_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 电子邮件用户邮箱地址 ******************** pie_v1***/ init_echart("echart_userinfo_email_pie_v1",'userinfo.email_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_email_pie" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 电子邮件用户邮箱地址 ******************** pie***/ init_echart("echart_userinfo_email_pie",'userinfo.email_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_userinfo_email_line" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 电子邮件用户邮箱地址 ******************** line***/ init_echart("echart_userinfo_email_line",'userinfo.email_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_userinfo_email_bar" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 电子邮件用户邮箱地址 ******************** bar***/ init_echart("echart_userinfo_email_bar",'userinfo.email_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_userinfo_email_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 电子邮件用户邮箱地址 ******************** bar_v1***/ init_echart("echart_userinfo_email_bar_v1",'userinfo.email_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_phonenumber_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 手机号码用户联系电话 ******************** pie_v2***/ init_echart("echart_userinfo_phonenumber_pie_v2",'userinfo.phonenumber_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_phonenumber_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 手机号码用户联系电话 ******************** pie_v1***/ init_echart("echart_userinfo_phonenumber_pie_v1",'userinfo.phonenumber_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_phonenumber_pie" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 手机号码用户联系电话 ******************** pie***/ init_echart("echart_userinfo_phonenumber_pie",'userinfo.phonenumber_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_userinfo_phonenumber_line" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 手机号码用户联系电话 ******************** line***/ init_echart("echart_userinfo_phonenumber_line",'userinfo.phonenumber_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_userinfo_phonenumber_bar" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 手机号码用户联系电话 ******************** bar***/ init_echart("echart_userinfo_phonenumber_bar",'userinfo.phonenumber_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_userinfo_phonenumber_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 手机号码用户联系电话 ******************** bar_v1***/ init_echart("echart_userinfo_phonenumber_bar_v1",'userinfo.phonenumber_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_regkwkwistertime_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 注册时间用户注册时的日期和时间 ******************** pie_v2***/ init_echart("echart_userinfo_regkwkwistertime_pie_v2",'userinfo.regkwkwistertime_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_regkwkwistertime_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 注册时间用户注册时的日期和时间 ******************** pie_v1***/ init_echart("echart_userinfo_regkwkwistertime_pie_v1",'userinfo.regkwkwistertime_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_regkwkwistertime_pie" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 注册时间用户注册时的日期和时间 ******************** pie***/ init_echart("echart_userinfo_regkwkwistertime_pie",'userinfo.regkwkwistertime_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_userinfo_regkwkwistertime_line" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 注册时间用户注册时的日期和时间 ******************** line***/ init_echart("echart_userinfo_regkwkwistertime_line",'userinfo.regkwkwistertime_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_userinfo_regkwkwistertime_bar" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 注册时间用户注册时的日期和时间 ******************** bar***/ init_echart("echart_userinfo_regkwkwistertime_bar",'userinfo.regkwkwistertime_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_userinfo_regkwkwistertime_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 注册时间用户注册时的日期和时间 ******************** bar_v1***/ init_echart("echart_userinfo_regkwkwistertime_bar_v1",'userinfo.regkwkwistertime_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_lkwkwastlogkwkwintime_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 最后登录时间用户最后一次登录的日期和时间 ******************** pie_v2***/ init_echart("echart_userinfo_lkwkwastlogkwkwintime_pie_v2",'userinfo.lkwkwastlogkwkwintime_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_lkwkwastlogkwkwintime_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 最后登录时间用户最后一次登录的日期和时间 ******************** pie_v1***/ init_echart("echart_userinfo_lkwkwastlogkwkwintime_pie_v1",'userinfo.lkwkwastlogkwkwintime_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_lkwkwastlogkwkwintime_pie" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 最后登录时间用户最后一次登录的日期和时间 ******************** pie***/ init_echart("echart_userinfo_lkwkwastlogkwkwintime_pie",'userinfo.lkwkwastlogkwkwintime_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_userinfo_lkwkwastlogkwkwintime_line" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 最后登录时间用户最后一次登录的日期和时间 ******************** line***/ init_echart("echart_userinfo_lkwkwastlogkwkwintime_line",'userinfo.lkwkwastlogkwkwintime_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_userinfo_lkwkwastlogkwkwintime_bar" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 最后登录时间用户最后一次登录的日期和时间 ******************** bar***/ init_echart("echart_userinfo_lkwkwastlogkwkwintime_bar",'userinfo.lkwkwastlogkwkwintime_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_userinfo_lkwkwastlogkwkwintime_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 最后登录时间用户最后一次登录的日期和时间 ******************** bar_v1***/ init_echart("echart_userinfo_lkwkwastlogkwkwintime_bar_v1",'userinfo.lkwkwastlogkwkwintime_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_status_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 用户状态如活跃、禁用等 ******************** pie_v2***/ init_echart("echart_userinfo_status_pie_v2",'userinfo.status_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_status_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 用户状态如活跃、禁用等 ******************** pie_v1***/ init_echart("echart_userinfo_status_pie_v1",'userinfo.status_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_userinfo_status_pie" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 用户状态如活跃、禁用等 ******************** pie***/ init_echart("echart_userinfo_status_pie",'userinfo.status_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_userinfo_status_line" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 用户状态如活跃、禁用等 ******************** line***/ init_echart("echart_userinfo_status_line",'userinfo.status_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_userinfo_status_bar" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 用户状态如活跃、禁用等 ******************** bar***/ init_echart("echart_userinfo_status_bar",'userinfo.status_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_userinfo_status_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 用户信息表 用户状态如活跃、禁用等 ******************** bar_v1***/ init_echart("echart_userinfo_status_bar_v1",'userinfo.status_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+
+
+
+
+
+
+    </div>
+  </body>
+</html>

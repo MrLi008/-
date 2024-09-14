@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>beta_基于django的多平台自动私信任务管理系统</title>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/echarts.js"></script>
+    <style>
+      body {
+        color: black;
+      }
+      .bkimg {
+        background-image: url('/static/imgs/default.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: opacity(90%);
+        filter: brightness(10%);
+        overflow: hidden;
+      }
+      .myechart_size {
+        height: 450px;
+      }
+      .myechart_size-height-full {
+        with: 95%;
+        height: 480px;
+      }
+    </style>
+    
+    {% include 'config_visual/function_echart.html' %}
+  </head>
+  <body>
+    <div class="bg-image" style="{% include 'config_visual/background.html' %}">
+      <div class="row">
+        <div class="d-flex justify-content-center">
+          <h3 style="color:black; font-size: 30px; font-weight: bold;">beta_基于django的多平台自动私信任务管理系统 消息发送记录表(messagesendreckwkword)</h3>
+        </div>
+      </div>
+      {% csrf_token %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_messagecontent_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 消息内容 ******************** pie_v2***/ init_echart("echart_messagesendreckwkword_messagecontent_pie_v2",'messagesendreckwkword.messagecontent_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_messagecontent_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 消息内容 ******************** pie_v1***/ init_echart("echart_messagesendreckwkword_messagecontent_pie_v1",'messagesendreckwkword.messagecontent_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_messagecontent_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 消息内容 ******************** pie***/ init_echart("echart_messagesendreckwkword_messagecontent_pie",'messagesendreckwkword.messagecontent_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendreckwkword_messagecontent_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 消息内容 ******************** line***/ init_echart("echart_messagesendreckwkword_messagecontent_line",'messagesendreckwkword.messagecontent_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendreckwkword_messagecontent_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 消息内容 ******************** bar***/ init_echart("echart_messagesendreckwkword_messagecontent_bar",'messagesendreckwkword.messagecontent_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendreckwkword_messagecontent_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 消息内容 ******************** bar_v1***/ init_echart("echart_messagesendreckwkword_messagecontent_bar_v1",'messagesendreckwkword.messagecontent_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_sendtime_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 发送时间 ******************** pie_v2***/ init_echart("echart_messagesendreckwkword_sendtime_pie_v2",'messagesendreckwkword.sendtime_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_sendtime_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 发送时间 ******************** pie_v1***/ init_echart("echart_messagesendreckwkword_sendtime_pie_v1",'messagesendreckwkword.sendtime_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_sendtime_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 发送时间 ******************** pie***/ init_echart("echart_messagesendreckwkword_sendtime_pie",'messagesendreckwkword.sendtime_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendreckwkword_sendtime_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 发送时间 ******************** line***/ init_echart("echart_messagesendreckwkword_sendtime_line",'messagesendreckwkword.sendtime_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendreckwkword_sendtime_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 发送时间 ******************** bar***/ init_echart("echart_messagesendreckwkword_sendtime_bar",'messagesendreckwkword.sendtime_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendreckwkword_sendtime_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 发送时间 ******************** bar_v1***/ init_echart("echart_messagesendreckwkword_sendtime_bar_v1",'messagesendreckwkword.sendtime_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_status_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 发送状态如待发送、发送中、已发送、发送失败 ******************** pie_v2***/ init_echart("echart_messagesendreckwkword_status_pie_v2",'messagesendreckwkword.status_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_status_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 发送状态如待发送、发送中、已发送、发送失败 ******************** pie_v1***/ init_echart("echart_messagesendreckwkword_status_pie_v1",'messagesendreckwkword.status_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_status_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 发送状态如待发送、发送中、已发送、发送失败 ******************** pie***/ init_echart("echart_messagesendreckwkword_status_pie",'messagesendreckwkword.status_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendreckwkword_status_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 发送状态如待发送、发送中、已发送、发送失败 ******************** line***/ init_echart("echart_messagesendreckwkword_status_line",'messagesendreckwkword.status_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendreckwkword_status_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 发送状态如待发送、发送中、已发送、发送失败 ******************** bar***/ init_echart("echart_messagesendreckwkword_status_bar",'messagesendreckwkword.status_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendreckwkword_status_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 发送状态如待发送、发送中、已发送、发送失败 ******************** bar_v1***/ init_echart("echart_messagesendreckwkword_status_bar_v1",'messagesendreckwkword.status_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_rekwkwtrycount_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 重试次数记录消息发送失败后的重试次数 ******************** pie_v2***/ init_echart("echart_messagesendreckwkword_rekwkwtrycount_pie_v2",'messagesendreckwkword.rekwkwtrycount_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_rekwkwtrycount_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 重试次数记录消息发送失败后的重试次数 ******************** pie_v1***/ init_echart("echart_messagesendreckwkword_rekwkwtrycount_pie_v1",'messagesendreckwkword.rekwkwtrycount_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_rekwkwtrycount_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 重试次数记录消息发送失败后的重试次数 ******************** pie***/ init_echart("echart_messagesendreckwkword_rekwkwtrycount_pie",'messagesendreckwkword.rekwkwtrycount_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendreckwkword_rekwkwtrycount_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 重试次数记录消息发送失败后的重试次数 ******************** line***/ init_echart("echart_messagesendreckwkword_rekwkwtrycount_line",'messagesendreckwkword.rekwkwtrycount_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendreckwkword_rekwkwtrycount_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 重试次数记录消息发送失败后的重试次数 ******************** bar***/ init_echart("echart_messagesendreckwkword_rekwkwtrycount_bar",'messagesendreckwkword.rekwkwtrycount_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendreckwkword_rekwkwtrycount_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 重试次数记录消息发送失败后的重试次数 ******************** bar_v1***/ init_echart("echart_messagesendreckwkword_rekwkwtrycount_bar_v1",'messagesendreckwkword.rekwkwtrycount_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_lkwkwastrekwkwtrytime_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 上次重试时间记录最后一次尝试发送的时间 ******************** pie_v2***/ init_echart("echart_messagesendreckwkword_lkwkwastrekwkwtrytime_pie_v2",'messagesendreckwkword.lkwkwastrekwkwtrytime_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_lkwkwastrekwkwtrytime_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 上次重试时间记录最后一次尝试发送的时间 ******************** pie_v1***/ init_echart("echart_messagesendreckwkword_lkwkwastrekwkwtrytime_pie_v1",'messagesendreckwkword.lkwkwastrekwkwtrytime_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_lkwkwastrekwkwtrytime_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 上次重试时间记录最后一次尝试发送的时间 ******************** pie***/ init_echart("echart_messagesendreckwkword_lkwkwastrekwkwtrytime_pie",'messagesendreckwkword.lkwkwastrekwkwtrytime_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendreckwkword_lkwkwastrekwkwtrytime_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 上次重试时间记录最后一次尝试发送的时间 ******************** line***/ init_echart("echart_messagesendreckwkword_lkwkwastrekwkwtrytime_line",'messagesendreckwkword.lkwkwastrekwkwtrytime_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendreckwkword_lkwkwastrekwkwtrytime_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 上次重试时间记录最后一次尝试发送的时间 ******************** bar***/ init_echart("echart_messagesendreckwkword_lkwkwastrekwkwtrytime_bar",'messagesendreckwkword.lkwkwastrekwkwtrytime_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendreckwkword_lkwkwastrekwkwtrytime_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 上次重试时间记录最后一次尝试发送的时间 ******************** bar_v1***/ init_echart("echart_messagesendreckwkword_lkwkwastrekwkwtrytime_bar_v1",'messagesendreckwkword.lkwkwastrekwkwtrytime_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_errkwkwormessage_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 错误信息如果发送失败记录失败的具体原因 ******************** pie_v2***/ init_echart("echart_messagesendreckwkword_errkwkwormessage_pie_v2",'messagesendreckwkword.errkwkwormessage_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_errkwkwormessage_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 错误信息如果发送失败记录失败的具体原因 ******************** pie_v1***/ init_echart("echart_messagesendreckwkword_errkwkwormessage_pie_v1",'messagesendreckwkword.errkwkwormessage_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendreckwkword_errkwkwormessage_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 错误信息如果发送失败记录失败的具体原因 ******************** pie***/ init_echart("echart_messagesendreckwkword_errkwkwormessage_pie",'messagesendreckwkword.errkwkwormessage_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendreckwkword_errkwkwormessage_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 错误信息如果发送失败记录失败的具体原因 ******************** line***/ init_echart("echart_messagesendreckwkword_errkwkwormessage_line",'messagesendreckwkword.errkwkwormessage_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendreckwkword_errkwkwormessage_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 错误信息如果发送失败记录失败的具体原因 ******************** bar***/ init_echart("echart_messagesendreckwkword_errkwkwormessage_bar",'messagesendreckwkword.errkwkwormessage_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendreckwkword_errkwkwormessage_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送记录表 错误信息如果发送失败记录失败的具体原因 ******************** bar_v1***/ init_echart("echart_messagesendreckwkword_errkwkwormessage_bar_v1",'messagesendreckwkword.errkwkwormessage_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+    </div>
+  </body>
+</html>

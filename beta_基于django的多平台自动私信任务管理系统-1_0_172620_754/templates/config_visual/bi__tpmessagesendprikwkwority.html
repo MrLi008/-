@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>beta_基于django的多平台自动私信任务管理系统</title>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/echarts.js"></script>
+    <style>
+      body {
+        color: black;
+      }
+      .bkimg {
+        background-image: url('/static/imgs/default.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: opacity(90%);
+        filter: brightness(10%);
+        overflow: hidden;
+      }
+      .myechart_size {
+        height: 450px;
+      }
+      .myechart_size-height-full {
+        with: 95%;
+        height: 480px;
+      }
+    </style>
+    
+    {% include 'config_visual/function_echart.html' %}
+  </head>
+  <body>
+    <div class="bg-image" style="{% include 'config_visual/background.html' %}">
+      <div class="row">
+        <div class="d-flex justify-content-center">
+          <h3 style="color:black; font-size: 30px; font-weight: bold;">beta_基于django的多平台自动私信任务管理系统 消息发送优先级表(messagesendprikwkwority)</h3>
+        </div>
+      </div>
+      {% csrf_token %}
+
+
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_prikwkworitylevel_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 优先级等级 ******************** pie_v2***/ init_echart("echart_messagesendprikwkwority_prikwkworitylevel_pie_v2",'messagesendprikwkwority.prikwkworitylevel_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_prikwkworitylevel_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 优先级等级 ******************** pie_v1***/ init_echart("echart_messagesendprikwkwority_prikwkworitylevel_pie_v1",'messagesendprikwkwority.prikwkworitylevel_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_prikwkworitylevel_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 优先级等级 ******************** pie***/ init_echart("echart_messagesendprikwkwority_prikwkworitylevel_pie",'messagesendprikwkwority.prikwkworitylevel_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_prikwkworitylevel_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 优先级等级 ******************** line***/ init_echart("echart_messagesendprikwkwority_prikwkworitylevel_line",'messagesendprikwkwority.prikwkworitylevel_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_prikwkworitylevel_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 优先级等级 ******************** bar***/ init_echart("echart_messagesendprikwkwority_prikwkworitylevel_bar",'messagesendprikwkwority.prikwkworitylevel_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_prikwkworitylevel_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 优先级等级 ******************** bar_v1***/ init_echart("echart_messagesendprikwkwority_prikwkworitylevel_bar_v1",'messagesendprikwkwority.prikwkworitylevel_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_description_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 优先级描述 ******************** pie_v2***/ init_echart("echart_messagesendprikwkwority_description_pie_v2",'messagesendprikwkwority.description_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_description_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 优先级描述 ******************** pie_v1***/ init_echart("echart_messagesendprikwkwority_description_pie_v1",'messagesendprikwkwority.description_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_description_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 优先级描述 ******************** pie***/ init_echart("echart_messagesendprikwkwority_description_pie",'messagesendprikwkwority.description_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_description_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 优先级描述 ******************** line***/ init_echart("echart_messagesendprikwkwority_description_line",'messagesendprikwkwority.description_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_description_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 优先级描述 ******************** bar***/ init_echart("echart_messagesendprikwkwority_description_bar",'messagesendprikwkwority.description_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_description_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 优先级描述 ******************** bar_v1***/ init_echart("echart_messagesendprikwkwority_description_bar_v1",'messagesendprikwkwority.description_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_createdat_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 创建时间 ******************** pie_v2***/ init_echart("echart_messagesendprikwkwority_createdat_pie_v2",'messagesendprikwkwority.createdat_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_createdat_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 创建时间 ******************** pie_v1***/ init_echart("echart_messagesendprikwkwority_createdat_pie_v1",'messagesendprikwkwority.createdat_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_createdat_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 创建时间 ******************** pie***/ init_echart("echart_messagesendprikwkwority_createdat_pie",'messagesendprikwkwority.createdat_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_createdat_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 创建时间 ******************** line***/ init_echart("echart_messagesendprikwkwority_createdat_line",'messagesendprikwkwority.createdat_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_createdat_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 创建时间 ******************** bar***/ init_echart("echart_messagesendprikwkwority_createdat_bar",'messagesendprikwkwority.createdat_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_createdat_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 创建时间 ******************** bar_v1***/ init_echart("echart_messagesendprikwkwority_createdat_bar_v1",'messagesendprikwkwority.createdat_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_updatedat_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 更新时间 ******************** pie_v2***/ init_echart("echart_messagesendprikwkwority_updatedat_pie_v2",'messagesendprikwkwority.updatedat_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_updatedat_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 更新时间 ******************** pie_v1***/ init_echart("echart_messagesendprikwkwority_updatedat_pie_v1",'messagesendprikwkwority.updatedat_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_updatedat_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 更新时间 ******************** pie***/ init_echart("echart_messagesendprikwkwority_updatedat_pie",'messagesendprikwkwority.updatedat_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_updatedat_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 更新时间 ******************** line***/ init_echart("echart_messagesendprikwkwority_updatedat_line",'messagesendprikwkwority.updatedat_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_updatedat_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 更新时间 ******************** bar***/ init_echart("echart_messagesendprikwkwority_updatedat_bar",'messagesendprikwkwority.updatedat_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_updatedat_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 更新时间 ******************** bar_v1***/ init_echart("echart_messagesendprikwkwority_updatedat_bar_v1",'messagesendprikwkwority.updatedat_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_kwkwdefaultkwkwdelay_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 默认延迟时间秒 ******************** pie_v2***/ init_echart("echart_messagesendprikwkwority_kwkwdefaultkwkwdelay_pie_v2",'messagesendprikwkwority.kwkwdefaultkwkwdelay_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_kwkwdefaultkwkwdelay_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 默认延迟时间秒 ******************** pie_v1***/ init_echart("echart_messagesendprikwkwority_kwkwdefaultkwkwdelay_pie_v1",'messagesendprikwkwority.kwkwdefaultkwkwdelay_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_kwkwdefaultkwkwdelay_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 默认延迟时间秒 ******************** pie***/ init_echart("echart_messagesendprikwkwority_kwkwdefaultkwkwdelay_pie",'messagesendprikwkwority.kwkwdefaultkwkwdelay_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_kwkwdefaultkwkwdelay_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 默认延迟时间秒 ******************** line***/ init_echart("echart_messagesendprikwkwority_kwkwdefaultkwkwdelay_line",'messagesendprikwkwority.kwkwdefaultkwkwdelay_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_kwkwdefaultkwkwdelay_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 默认延迟时间秒 ******************** bar***/ init_echart("echart_messagesendprikwkwority_kwkwdefaultkwkwdelay_bar",'messagesendprikwkwority.kwkwdefaultkwkwdelay_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_kwkwdefaultkwkwdelay_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 默认延迟时间秒 ******************** bar_v1***/ init_echart("echart_messagesendprikwkwority_kwkwdefaultkwkwdelay_bar_v1",'messagesendprikwkwority.kwkwdefaultkwkwdelay_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_maxrekwkwtrycount_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 最大重试次数 ******************** pie_v2***/ init_echart("echart_messagesendprikwkwority_maxrekwkwtrycount_pie_v2",'messagesendprikwkwority.maxrekwkwtrycount_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_maxrekwkwtrycount_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 最大重试次数 ******************** pie_v1***/ init_echart("echart_messagesendprikwkwority_maxrekwkwtrycount_pie_v1",'messagesendprikwkwority.maxrekwkwtrycount_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_maxrekwkwtrycount_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 最大重试次数 ******************** pie***/ init_echart("echart_messagesendprikwkwority_maxrekwkwtrycount_pie",'messagesendprikwkwority.maxrekwkwtrycount_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_maxrekwkwtrycount_line" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 最大重试次数 ******************** line***/ init_echart("echart_messagesendprikwkwority_maxrekwkwtrycount_line",'messagesendprikwkwority.maxrekwkwtrycount_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_maxrekwkwtrycount_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 最大重试次数 ******************** bar***/ init_echart("echart_messagesendprikwkwority_maxrekwkwtrycount_bar",'messagesendprikwkwority.maxrekwkwtrycount_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagesendprikwkwority_maxrekwkwtrycount_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息发送优先级表 最大重试次数 ******************** bar_v1***/ init_echart("echart_messagesendprikwkwority_maxrekwkwtrycount_bar_v1",'messagesendprikwkwority.maxrekwkwtrycount_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+    </div>
+  </body>
+</html>

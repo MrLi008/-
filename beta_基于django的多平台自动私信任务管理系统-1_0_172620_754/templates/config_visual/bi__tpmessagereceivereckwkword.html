@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>beta_基于django的多平台自动私信任务管理系统</title>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/echarts.js"></script>
+    <style>
+      body {
+        color: black;
+      }
+      .bkimg {
+        background-image: url('/static/imgs/default.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: opacity(90%);
+        filter: brightness(10%);
+        overflow: hidden;
+      }
+      .myechart_size {
+        height: 450px;
+      }
+      .myechart_size-height-full {
+        with: 95%;
+        height: 480px;
+      }
+    </style>
+    
+    {% include 'config_visual/function_echart.html' %}
+  </head>
+  <body>
+    <div class="bg-image" style="{% include 'config_visual/background.html' %}">
+      <div class="row">
+        <div class="d-flex justify-content-center">
+          <h3 style="color:black; font-size: 30px; font-weight: bold;">beta_基于django的多平台自动私信任务管理系统 消息接收记录表(messagereceivereckwkword)</h3>
+        </div>
+      </div>
+      {% csrf_token %}
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_messagecontent_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 消息内容 ******************** pie_v2***/ init_echart("echart_messagereceivereckwkword_messagecontent_pie_v2",'messagereceivereckwkword.messagecontent_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_messagecontent_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 消息内容 ******************** pie_v1***/ init_echart("echart_messagereceivereckwkword_messagecontent_pie_v1",'messagereceivereckwkword.messagecontent_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_messagecontent_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 消息内容 ******************** pie***/ init_echart("echart_messagereceivereckwkword_messagecontent_pie",'messagereceivereckwkword.messagecontent_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_messagecontent_line" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 消息内容 ******************** line***/ init_echart("echart_messagereceivereckwkword_messagecontent_line",'messagereceivereckwkword.messagecontent_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_messagecontent_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 消息内容 ******************** bar***/ init_echart("echart_messagereceivereckwkword_messagecontent_bar",'messagereceivereckwkword.messagecontent_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_messagecontent_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 消息内容 ******************** bar_v1***/ init_echart("echart_messagereceivereckwkword_messagecontent_bar_v1",'messagereceivereckwkword.messagecontent_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_receivetime_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 接收时间 ******************** pie_v2***/ init_echart("echart_messagereceivereckwkword_receivetime_pie_v2",'messagereceivereckwkword.receivetime_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_receivetime_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 接收时间 ******************** pie_v1***/ init_echart("echart_messagereceivereckwkword_receivetime_pie_v1",'messagereceivereckwkword.receivetime_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_receivetime_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 接收时间 ******************** pie***/ init_echart("echart_messagereceivereckwkword_receivetime_pie",'messagereceivereckwkword.receivetime_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_receivetime_line" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 接收时间 ******************** line***/ init_echart("echart_messagereceivereckwkword_receivetime_line",'messagereceivereckwkword.receivetime_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_receivetime_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 接收时间 ******************** bar***/ init_echart("echart_messagereceivereckwkword_receivetime_bar",'messagereceivereckwkword.receivetime_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_receivetime_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 接收时间 ******************** bar_v1***/ init_echart("echart_messagereceivereckwkword_receivetime_bar_v1",'messagereceivereckwkword.receivetime_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_status_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 接收状态如已接收、未处理、已处理等 ******************** pie_v2***/ init_echart("echart_messagereceivereckwkword_status_pie_v2",'messagereceivereckwkword.status_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_status_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 接收状态如已接收、未处理、已处理等 ******************** pie_v1***/ init_echart("echart_messagereceivereckwkword_status_pie_v1",'messagereceivereckwkword.status_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_status_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 接收状态如已接收、未处理、已处理等 ******************** pie***/ init_echart("echart_messagereceivereckwkword_status_pie",'messagereceivereckwkword.status_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_status_line" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 接收状态如已接收、未处理、已处理等 ******************** line***/ init_echart("echart_messagereceivereckwkword_status_line",'messagereceivereckwkword.status_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_status_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 接收状态如已接收、未处理、已处理等 ******************** bar***/ init_echart("echart_messagereceivereckwkword_status_bar",'messagereceivereckwkword.status_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_status_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 接收状态如已接收、未处理、已处理等 ******************** bar_v1***/ init_echart("echart_messagereceivereckwkword_status_bar_v1",'messagereceivereckwkword.status_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_responsecontent_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 回复内容 ******************** pie_v2***/ init_echart("echart_messagereceivereckwkword_responsecontent_pie_v2",'messagereceivereckwkword.responsecontent_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_responsecontent_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 回复内容 ******************** pie_v1***/ init_echart("echart_messagereceivereckwkword_responsecontent_pie_v1",'messagereceivereckwkword.responsecontent_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_responsecontent_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 回复内容 ******************** pie***/ init_echart("echart_messagereceivereckwkword_responsecontent_pie",'messagereceivereckwkword.responsecontent_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_responsecontent_line" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 回复内容 ******************** line***/ init_echart("echart_messagereceivereckwkword_responsecontent_line",'messagereceivereckwkword.responsecontent_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_responsecontent_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 回复内容 ******************** bar***/ init_echart("echart_messagereceivereckwkword_responsecontent_bar",'messagereceivereckwkword.responsecontent_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_responsecontent_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 回复内容 ******************** bar_v1***/ init_echart("echart_messagereceivereckwkword_responsecontent_bar_v1",'messagereceivereckwkword.responsecontent_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+<div class="row">
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_responsetime_pie_v2" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 回复时间 ******************** pie_v2***/ init_echart("echart_messagereceivereckwkword_responsetime_pie_v2",'messagereceivereckwkword.responsetime_pie_v2','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_responsetime_pie_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 回复时间 ******************** pie_v1***/ init_echart("echart_messagereceivereckwkword_responsetime_pie_v1",'messagereceivereckwkword.responsetime_pie_v1','/config_visual/bi',{},);</script>
+<div class="col-sm-3"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_responsetime_pie" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 回复时间 ******************** pie***/ init_echart("echart_messagereceivereckwkword_responsetime_pie",'messagereceivereckwkword.responsetime_pie','/config_visual/bi',{});</script>
+<div class="col-sm-5"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_responsetime_line" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 回复时间 ******************** line***/ init_echart("echart_messagereceivereckwkword_responsetime_line",'messagereceivereckwkword.responsetime_line','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_responsetime_bar" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 回复时间 ******************** bar***/ init_echart("echart_messagereceivereckwkword_responsetime_bar",'messagereceivereckwkword.responsetime_bar','/config_visual/bi',{});</script>
+<div class="col-sm-4"><div class="default-echart-border"><div id="echart_messagereceivereckwkword_responsetime_bar_v1" class="myechart_size"></div></div></div>
+<script>/*** 消息接收记录表 回复时间 ******************** bar_v1***/ init_echart("echart_messagereceivereckwkword_responsetime_bar_v1",'messagereceivereckwkword.responsetime_bar_v1','/config_visual/bi',{},polar={radius: [30, '80%']});</script>
+</div>
+
+
+
+
+
+
+    </div>
+  </body>
+</html>
